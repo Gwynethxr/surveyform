@@ -1,13 +1,24 @@
-
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <h1>Pokemon Unite Survey Form</h1>
-    <p>Thank you for taking the time to help us improve the Community</p>
+    <h1 id="title">Pokemon Unite Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the Community</p>
+    <form id="survey-form">
+        <div id="form-group">
+            <label for="nickname">Nickname : <input id="nickname" name="nickname" type="text" placeholder="Input Your Nickname" maxlength="12" required></input></label>
+        </div>
+        <div class="form-group">
+            <label for="unite-id">Unite ID : <input id="unite-id" maxlength="8" placeholder="#8D2F01W" pattern="[a-z0-9]{7}"
+                    style="text-transform:uppercase;" required></input></label>
+        </div>
+    </form>
 </body>
+
 </html>

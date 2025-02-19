@@ -1,0 +1,7 @@
+#form-group{
+    display:flexbox;
+}
+
+label input{
+    display: block;
+}
