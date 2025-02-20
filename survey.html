@@ -8,74 +8,86 @@
 </head>
 
 <body>
-    <h1 id="title">Pokemon Unite Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the Community</p>
-    <form id="survey-form">
-        <div id="form-group">
-            <label for="nickname">Nickname : <input id="nickname" name="nickname" type="text" placeholder="Input Your Nickname" maxlength="12" required></input></label>
-        </div>
-        <div class="form-group">
-            <label for="unite-id">Unite ID : <input id="unite-id" maxlength="8" placeholder="#8D2F01W" pattern="[a-z0-9]{7}"
-                    style="text-transform:uppercase;" required></input></label>
-        </div>
-        <div class="form-group">
-            <label for="favorite-pokemon">Favorite Pokemon <span class="optional">(optional)</span><input id="favorite-pokemon" name="favorite-pokemon" type="text" placeholder="Zeraora"
-                pattern="[a-z]" maxlength="15"/></label>
-        </div>
-        <div class="form-group">
-            <p>Whick Role Do You Play</p>
-            <select id="dropdown" name="role" class="form-control" required>
-                <option disabled selected value>Select Role</option>
-                <option value="speedster">Speedster</option>
-                <option value="attacker">Attacker</option>
-                <option value="allround">All-Rounder</option>
-                <optio value="defender">Defender</option>
-                <option value="support">Support</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <p>Would you recommend Pokemon Unite to a friend?</p>
-            <label>
-                <input name="user-recomend" value="definitely" type="radio" class="input-radio" checked />Definitely
-            </label>
-            <label>
-                <input name="user-recomend" value="maybe" type="radio" class="input-radio" checked>Maybe
-            </label>
-            <label>
-                <input name="user-recomend" value="notsure" type="radio" class="input-radio" checked>Not Sure
-            </label>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Pokemon Unite Survey Form</h1>
+            <p id="description" class="desription text-center">Thank you for taking the time to help us improve the Game</p>
+            <form id="survey-form">
+        </header>
+            <div id="form-group">
+                <label for="nickname">Nickname : <input id="nickname" name="nickname" type="text" placeholder="Input Your Nickname" maxlength="12" required></input></label>
+            </div>
+            <div class="form-group">
+                <label for="unite-id">Unite ID : <input id="unite-id" maxlength="8" placeholder="#8D2F01W" pattern="[a-z0-9]{7}"
+                        style="text-transform:uppercase;" required></input></label>
+            </div>
+            <div class="form-group">
+                <label for="favorite-pokemon">Favorite Pokemon <span class="optional">(optional)</span><input id="favorite-pokemon" name="favorite-pokemon" type="text" placeholder="Zeraora"
+                    pattern="[a-z]" maxlength="15"/></label>
+            </div>
+            <div class="form-group">
+                <p>Whick Role Do You Play</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select Role</option>
+                    <option value="speedster">Speedster</option>
+                    <option value="attacker">Attacker</option>
+                    <option value="allround">All-Rounder</option>
+                    <optio value="defender">Defender</option>
+                    <option value="support">Support</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend Pokemon Unite to a friend?</p>
+                <label>
+                    <input name="user-recomend" value="definitely" type="radio" class="input-radio" checked />Definitely
+                </label>
+                <label>
+                    <input name="user-recomend" value="maybe" type="radio" class="input-radio" checked>Maybe
+                </label>
+                <label>
+                    <input name="user-recomend" value="notsure" type="radio" class="input-radio" checked>Not Sure
+                </label>
 
-        </div>
-        <div class="form-group">
-            <p>What is your favorite feature in Pokemon Unite</p>
-            <select id="dropdown" name="feature" class="form-control" required>
-                <option disabled selected value>Select Feature</option>
-                <option value="gameplay">Gameplay</option>
-                <option value="map">Map</option>
-                <option value="pokemon">Pokemon</option>
-                <option value="skin">Skin & Collectibe</option>
-                <option value="minigames">Mini Games</option>
-            </select>
-        </div>
-        <div>
-            <p>What would you like to see in Pokemon Unite? <span class="clue">(Check all that apply)</span></p>
-            <label>
-                <input name="prefer" value="new-pokemon" type="checkbox" class="input-checkbox">New Pokemon
-            </label>
-            <label>
-                <input name="prefer" value="new-map" type="checkbox" class="input-checkbox">New Map
-            </label>
-            <label>
-                <input name="prefer" value="new-item" type="checkbox" class="input-checkbox">New Battle Item & Held Item
-            </label>
-            <label>
-                <input name="prefer" value="new-skin" type="checkbox" class="input-checkbox">New Skin
-            </label>
-            <label>
-                <input name="prefer" value="new-gameplay" type="checkbox" class="input-checkbox">New Gameplay
-            </label>
-        </div>
-    </form>
+            </div>
+            <div class="form-group">
+                <p>What is your favorite feature in Pokemon Unite</p>
+                <select id="dropdown" name="feature" class="form-control" required>
+                    <option disabled selected value>Select Feature</option>
+                    <option value="gameplay">Gameplay</option>
+                    <option value="map">Map</option>
+                    <option value="pokemon">Pokemon</option>
+                    <option value="skin">Skin & Collectibe</option>
+                    <option value="minigames">Mini Games</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What would you like to see in Pokemon Unite? <span class="clue">(Check all that apply)</span></p>
+                <label>
+                    <input name="prefer" value="new-pokemon" type="checkbox" class="input-checkbox">New Pokemon
+                </label>
+                <label>
+                    <input name="prefer" value="new-map" type="checkbox" class="input-checkbox">New Map
+                </label>
+                <label>
+                    <input name="prefer" value="new-item" type="checkbox" class="input-checkbox">New Battle Item & Held Item
+                </label>
+                <label>
+                    <input name="prefer" value="new-skin" type="checkbox" class="input-checkbox">New Skin
+                </label>
+                <label>
+                    <input name="prefer" value="new-gameplay" type="checkbox" class="input-checkbox">New Gameplay
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any commends or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="textarea" placeholder="Enter your commends here...">
+                </textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button"> Submit</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
