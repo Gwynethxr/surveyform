@@ -12,18 +12,25 @@
         <header class="header">
             <h1 id="title" class="text-center">Pokemon Unite Survey Form</h1>
             <p id="description" class="desription text-center">Thank you for taking the time to help us improve the Game</p>
-            <form id="survey-form">
         </header>
-            <div id="form-group">
-                <label for="nickname">Nickname : <input id="nickname" name="nickname" type="text" placeholder="Input Your Nickname" maxlength="12" required></input></label>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="nickname-label" for="nickname">Nickname  </label>
+                <input  class="form-control" name="nickname" type="text"
+                    placeholder="Input your nickname" maxlength="12" required></input>
             </div>
             <div class="form-group">
-                <label for="unite-id">Unite ID : <input id="unite-id" maxlength="8" placeholder="#8D2F01W" pattern="[a-z0-9]{7}"
-                        style="text-transform:uppercase;" required></input></label>
+                <label for="unite-id">Unite ID  </label>
+                    <input id="unite-id" maxlength="8" placeholder="#8D2F01W" pattern="[a-z0-9]{7}"
+                        style="text-transform:uppercase;" class="form-control" required></input>
+                
             </div>
             <div class="form-group">
-                <label for="favorite-pokemon">Favorite Pokemon <span class="optional">(optional)</span><input id="favorite-pokemon" name="favorite-pokemon" type="text" placeholder="Zeraora"
-                    pattern="[a-z]" maxlength="15"/></label>
+                <label for="favorite-pokemon">Favorite Pokemon <span class="clue">(optional)</span></label>
+                    <input id="favorite-pokemon" 
+                    name="favorite-pokemon" type="text" placeholder="Zeraora" class="form-control"
+                    pattern="[a-z]" maxlength="15" required/>
+                
             </div>
             <div class="form-group">
                 <p>Whick Role Do You Play</p>
